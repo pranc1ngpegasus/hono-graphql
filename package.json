@@ -9,7 +9,9 @@
 		"@biomejs/biome": "1.8.3"
 	},
 	"dependencies": {
+		"@hono/graphql-server": "0.5.0",
 		"@hono/node-server": "1.12.1",
+		"graphql": "16.9.0",
 		"hono": "4.5.6",
 		"ts-node": "10.9.2"
 	}

@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@hono/graphql-server':
+        specifier: 0.5.0
+        version: 0.5.0(hono@4.5.6)
       '@hono/node-server':
         specifier: 1.12.1
         version: 1.12.1
+      graphql:
+        specifier: 16.9.0
+        version: 16.9.0
       hono:
         specifier: 4.5.6
         version: 4.5.6
@@ -81,6 +87,12 @@ packages:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
 
+  '@hono/graphql-server@0.5.0':
+    resolution: {integrity: sha512-lF+AwPEDiisDFS/GAB/QelJXIwEEnVPBB0jpGAmeU/sp5PS/YMTMEZiorvmthMgkHFfaH8uKNVRGD2pxWM5HsQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      hono: '>=3.0.0'
+
   '@hono/node-server@1.12.1':
     resolution: {integrity: sha512-C9l+08O8xtXB7Ppmy8DjBFH1hYji7JKzsU32Yt1poIIbdPp6S7aOI8IldDHD9YFJ55lv2c21ovNrmxatlHfhAg==}
     engines: {node: '>=18.14.1'}
@@ -128,6 +140,10 @@ packages:
   diff@4.0.2:
     resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
     engines: {node: '>=0.3.1'}
+
+  graphql@16.9.0:
+    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   hono@4.5.6:
     resolution: {integrity: sha512-9SuUC/zLQv8YAcnIxJko0KCeLI0Q6menPsDWuJ9jaH+r8ZkVXeLqeLs1QJXCPKKbURAWj9x0SJBSFh803EnAUw==}
@@ -206,6 +222,11 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
+  '@hono/graphql-server@0.5.0(hono@4.5.6)':
+    dependencies:
+      graphql: 16.9.0
+      hono: 4.5.6
+
   '@hono/node-server@1.12.1': {}
 
   '@jridgewell/resolve-uri@3.1.2': {}
@@ -240,6 +261,8 @@ snapshots:
   create-require@1.1.1: {}
 
   diff@4.0.2: {}
+
+  graphql@16.9.0: {}
 
   hono@4.5.6: {}
 
