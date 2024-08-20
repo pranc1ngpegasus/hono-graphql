@@ -11,8 +11,10 @@
 	"dependencies": {
 		"@hono/graphql-server": "0.5.0",
 		"@hono/node-server": "1.12.1",
+		"@types/node": "^22.4.1",
 		"graphql": "16.9.0",
 		"hono": "4.5.6",
+		"path": "0.12.7",
 		"ts-node": "10.9.2"
 	}
 }
