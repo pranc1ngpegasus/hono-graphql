@@ -1,4 +1,12 @@
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgres://postgres:password@postgres:5432/default
+    ports:
+      - 3000:3000
   postgres:
     image: postgres:latest
     environment:
