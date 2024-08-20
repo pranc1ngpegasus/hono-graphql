@@ -2,7 +2,9 @@
 	"name": "hono-graphql",
 	"version": "0.0.0",
 	"main": "src/index.js",
-	"scripts": {},
+	"scripts": {
+		"start": "ts-node src/index.ts"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3"
 	},
