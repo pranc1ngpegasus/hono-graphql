@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/graphql-server':
         specifier: 0.5.0
-        version: 0.5.0(hono@4.5.6)
+        version: 0.5.0(hono@4.11.7)
       '@hono/node-server':
         specifier: 1.12.1
         version: 1.12.1
@@ -27,8 +27,8 @@ importers:
         specifier: 16.9.0
         version: 16.9.0
       hono:
-        specifier: 4.5.6
-        version: 4.5.6
+        specifier: 4.11.7
+        version: 4.11.7
       path:
         specifier: 0.12.7
         version: 0.12.7
@@ -110,9 +110,11 @@ packages:
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-kit/esm-loader@2.6.5':
     resolution: {integrity: sha512-FxEMIkJKnodyA1OaCUoEvbYRkoZlLZ4d/eXFu9Fh8CbBBgP5EmZxrfTRyN0qpXZ4vOvqnE5YdRdcrmUUXuU+dA==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -577,9 +579,9 @@ packages:
     resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  hono@4.5.6:
-    resolution: {integrity: sha512-9SuUC/zLQv8YAcnIxJko0KCeLI0Q6menPsDWuJ9jaH+r8ZkVXeLqeLs1QJXCPKKbURAWj9x0SJBSFh803EnAUw==}
-    engines: {node: '>=16.0.0'}
+  hono@4.11.7:
+    resolution: {integrity: sha512-l7qMiNee7t82bH3SeyUCt9UF15EVmaBvsppY2zQtrbIhl/yzBTny+YUxsVjSjQ6gaqaeVtZmGocom8TzBlA4Yw==}
+    engines: {node: '>=16.9.0'}
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -834,10 +836,10 @@ snapshots:
   '@esbuild/win32-x64@0.19.12':
     optional: true
 
-  '@hono/graphql-server@0.5.0(hono@4.5.6)':
+  '@hono/graphql-server@0.5.0(hono@4.11.7)':
     dependencies:
       graphql: 16.9.0
-      hono: 4.5.6
+      hono: 4.11.7
 
   '@hono/node-server@1.12.1': {}
 
@@ -973,7 +975,7 @@ snapshots:
 
   graphql@16.9.0: {}
 
-  hono@4.5.6: {}
+  hono@4.11.7: {}
 
   inherits@2.0.3: {}
 
