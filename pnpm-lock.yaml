@@ -12,8 +12,8 @@ importers:
         specifier: 0.5.0
         version: 0.5.0(hono@4.5.6)
       '@hono/node-server':
-        specifier: 1.12.1
-        version: 1.12.1
+        specifier: 1.19.13
+        version: 1.19.13(hono@4.5.6)
       '@types/node':
         specifier: ^22.4.1
         version: 22.4.1
@@ -110,9 +110,11 @@ packages:
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-kit/esm-loader@2.6.5':
     resolution: {integrity: sha512-FxEMIkJKnodyA1OaCUoEvbYRkoZlLZ4d/eXFu9Fh8CbBBgP5EmZxrfTRyN0qpXZ4vOvqnE5YdRdcrmUUXuU+dA==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -390,9 +392,11 @@ packages:
     peerDependencies:
       hono: '>=3.0.0'
 
-  '@hono/node-server@1.12.1':
-    resolution: {integrity: sha512-C9l+08O8xtXB7Ppmy8DjBFH1hYji7JKzsU32Yt1poIIbdPp6S7aOI8IldDHD9YFJ55lv2c21ovNrmxatlHfhAg==}
+  '@hono/node-server@1.19.13':
+    resolution: {integrity: sha512-TsQLe4i2gvoTtrHje625ngThGBySOgSK3Xo2XRYOdqGN1teR8+I7vchQC46uLJi8OF62YTYA3AhSpumtkhsaKQ==}
     engines: {node: '>=18.14.1'}
+    peerDependencies:
+      hono: ^4
 
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
@@ -839,7 +843,9 @@ snapshots:
       graphql: 16.9.0
       hono: 4.5.6
 
-  '@hono/node-server@1.12.1': {}
+  '@hono/node-server@1.19.13(hono@4.5.6)':
+    dependencies:
+      hono: 4.5.6
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
